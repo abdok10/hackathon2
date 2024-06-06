@@ -1,12 +1,14 @@
 import '@/app/global.css'
-
+import LoginLinks from '@/app/LoginLinks'
 export const metadata = {
     title: 'Laravel',
 }
 const RootLayout = ({ children }) => {
     return (
         <html lang="en">
-            <body className="antialiased">{children}</body>
+            <body className="antialiased">
+            <LoginLinks />
+            {children}</body>
         </html>
     )
 }
